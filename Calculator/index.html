@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" ></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Scientific Calculator</h1>
+        <input type="text" id="data" >
+        <div class="buttons">
+            <button class = "btn" value="Sin" onclick="calling(this)">Sin</button>
+            <button class = "btn" value="Sqrt" onclick="calling(this)">Sqrt</button>
+            <button class = "btn" value="1" onclick="insert(this)">1</button>
+            <button class = "btn" value="2" onclick="insert(this)">2</button>
+            <button class = "btn" value="3" onclick="insert(this)">3</button>
+            <button class = "btn"  onclick="clearLastEntry()">CE</button>
+            <button class = "btn"  onclick="clearDisplay()">AC</button><br>
+            <button class = "btn" value="Cos" onclick="calling(this)">Cos</button>
+            <button class = "btn" value="Pow" onclick="calling(this)">Pow</button>
+            <button class = "btn" value="4" onclick="insert(this)">4</button>
+            <button class = "btn" value="5" onclick="insert(this)">5</button>
+            <button class = "btn" value="6" onclick="insert(this)">6</button>
+            <button class = "btn" value="-" onclick="insert(this)">-</button>
+            <button class = "btn" value="+" onclick="insert(this)">+</button><br>
+            <button class = "btn" value="Tan" onclick="calling(this)">Tan</button>
+            <button class = "btn" value="Log" onclick="calling(this)">Log</button>
+            <button class = "btn" value="7" onclick="insert(this)">7</button>
+            <button class = "btn" value="8" onclick="insert(this)">8</button>
+            <button class = "btn" value="9" onclick="insert(this)">9</button>
+            <button class = "btn" value="*" onclick="insert(this)">*</button>
+            <button class = "btn" value="/" onclick="insert(this)">/</button><br>
+            <button class = "btn" value="PI" onclick="calling(this)">PI</button>
+            <button class = "btn" value="e^x" onclick="calling(this)   ">e^x</button>
+            <button class = "btn" value="0" onclick="insert(this)">0</button>
+            <button class = "btn" value="." onclick="insert(this)">.</button>
+            <button class = "btn" value="+/-" onclick="calculatePlusMinus(this)">+/-</button>
+            <button class = "btnEval" value="=" onclick="_eval(this)">=</button>
+    </div>
+</body>
+</html>

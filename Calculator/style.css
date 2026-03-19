@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.container{
+    background-color: linear-gradient(135deg, #6B73FF 0%, #000DFF 100%);
+    width: 35%;
+    height: auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.container h1{
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: poppins;
+    color: #333;
+}
+input[type="text"]{
+    width: 95%;
+    height: 50px;
+    margin-bottom: 20px;
+    text-align: right;
+    padding: 10px;
+    font-size: 24px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    /* transition:border-color 2s ease 0.5s, outline 2s ease 0.5s; */
+}
+.buttons{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.buttons .btn{
+    padding: 10px;
+    font-size: 18px;
+    width:50px;
+    text-align: center;
+    font-family: poppins;
+    border: none;
+    background-color: #007BFF;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 15px 0 15px 0; 
+}
+.btnEval{
+    padding: 10px;
+    width: 115px;
+    font-size: 18px;
+    font-family: poppins;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 15px 0 15px 0; 
+}
+
+.container input[type="text"]:active {
+    outline: 2px solid #007BFF;
+    border: 2px solid #007BFF; /* Change border on focus */
+}
+/* .container input[type="text"]:not(:focus) {
+    border: 2px solid #ccc; 
+} */
+/* .container input[type="text"]:hover{
+    outline: 2px solid #007BFF;
+    border-color: #007BFF;
+} */
