@@ -3,36 +3,6 @@ let lastEntry = "";
 function insert(btn){
     let data = document.getElementById("data");
     data.value = data.value + btn.value;
-    lastEntry = btn.value;
-}
-
-function _eval(){
-    let data = document.getElementById("data");
-
-    try{
-        data.value = eval(data.value);
-    }    catch(err){
-        alert("Invalid Expression");
-    }
-
-}
-
-function clearDisplay(){
-    let data = document.getElementById("data").value ="";
-}
- function clearLastEntry(){
-    let data = document.getElementById("data");
-    data.value = data.value.slice(0, -lastEntry.length);
-}
-
-function insert(btn){
-    let data = document.getElementById("data");
-    data.value = data.value + btn.value;
-}
-
-function insert(btn){
-    let data = document.getElementById("data");
-    data.value = data.value + btn.value;
 }
 
 function _eval(){
